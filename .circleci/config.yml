@@ -129,7 +129,9 @@ jobs:
             cd frontend
             npm i
             npm audit fix --audit-level=critical 
-          no_output_timeout: 30m
+      - store_artifacts:
+          path: /tmp/screenshots  
+    no_output_timeout: 30m
                 
   scan-backend:
     docker:
