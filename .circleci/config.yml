@@ -129,6 +129,7 @@ jobs:
             cd frontend
             npm i
             npm audit --audit-level=critical --force
+          no_output_timeout: 30m
                 
   scan-backend:
     docker:
