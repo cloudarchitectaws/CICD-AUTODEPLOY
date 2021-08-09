@@ -131,7 +131,7 @@ jobs:
             npm audit fix --audit-level=critical 
       - store_artifacts:
           path: /tmp/screenshots  
-    no_output_timeout: 30m
+            
                 
   scan-backend:
     docker:
