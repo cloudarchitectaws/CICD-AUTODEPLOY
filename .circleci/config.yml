@@ -225,7 +225,7 @@ jobs:
       #- revert-migrations
       #- destroy-environment  
 
-  run-migrations: #preparing data needed for backend application to run
+  run-migrations: #preparing data needed for backend application to runn
     docker:
       - image: circleci/node:13.8.0
     steps:
