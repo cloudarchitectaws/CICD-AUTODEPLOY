@@ -128,8 +128,7 @@ jobs:
           command: |
             cd frontend
             npm i
-            npm audit --audit-level=critical --force > audit.log
-            tail audit.log -n 200
+            npm audit --audit-level=critical --force
                 
   scan-backend:
     docker:
