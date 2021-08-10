@@ -11,7 +11,7 @@
       ENVIRONMENT: "{{ lookup('env','ENVIRONMENT') }}"
       NODE_ENV: "{{ lookup('env','NODE_ENV') }}"
       TYPEORM_CONNECTION: "{{ lookup('env','TYPEORM_CONNECTION') }}"
-      TYPEORM_ENTITIES: ./src/modules/domain/**/*.entity.ts
+      TYPEORM_ENTITIES: ./src/modules/**/*.entity.ts
       TYPEORM_HOST: "{{ lookup('env','TYPEORM_HOST') }}"
       TYPEORM_PORT: 5432
       TYPEORM_USERNAME: "{{ lookup('env','TYPEORM_USERNAME') }}"
