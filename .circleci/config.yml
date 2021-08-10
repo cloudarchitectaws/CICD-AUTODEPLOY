@@ -331,7 +331,7 @@ jobs:
       - run:
           name: Deploy frontend objects (bake ip backend API_URL into the frontend)
           command: |
-            npm install webpack-dev-server -g
+            
             cd frontend
             npm install
             npm run build
@@ -351,9 +351,12 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            apk add --update openssh-client #Insatll ssh
+            apk add --update git #Insatll git
+            apk add --update tar gzip curl nodejs tree
+            apk add --update npm
             apk add --update ansible
-            apk add --update tar gzip curl
-            apk add --update openssh-client
+            pip install awscli # install aws cli
       - run:
           name: Setup inventory file
           command: |
@@ -384,8 +387,8 @@ jobs:
           name: Deploy Backend
           no_output_timeout: 30m
           command: |
-            npm install webpack-dev-server -g
-            ANSIBLE_HOST_KEY_CHECKING=False 
+            
+            export ANSIBLE_HOST_KEY_CHECKING=False 
             ansible-playbook -i .circleci/ansible/inventory.txt .circleci/ansible/deploy-backend.yml
       
       #- revert-migrations
