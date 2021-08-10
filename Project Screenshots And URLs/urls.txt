@@ -1,18 +1,16 @@
 ﻿    i. Public Url to GitHub repository (not private) [URL01]
-       https://github.com/wardahsana/Auto-Deploy-Project.git
+       https://github.com/cloudarchitectaws/CICD-AUTODEPLOY 
 
 
     ii. Public URL of S3. 
-	https://udapeople-70e02cd.s3.us-east-2.amazonaws.com/index.html.
-        http://udapeople-70e02cd.s3-website.us-east-2.amazonaws.com. (aka, your green candidate    		front-end) [URL02]
-
+	https://udapeople-5fdbdad.s3.ap-south-1.amazonaws.com/index.html#/employees
+    
     iii. Public URL for your CloudFront distribution.
-	 http://d3ozbh9dhr4htt.cloudfront.net/#/employees. (aka, your blue production front-end) 		 [URL03]
+	 https://d3vh2huuc5xovx.cloudfront.net/#/employees
 
     iv. Public URLs to deployed application back-end in EC2 
-	ec2-18-222-204-195.us-east-2.compute.amazonaws.com. [URL04]
+	http://65.0.20.186:3030/api/status 
 
     v. Public URL to your Prometheus Server.
-       ec2-18-224-184-193.us-east-2.compute.amazonaws.com. [URL05]
-       http://ec2-18-224-184-193.us-east-2.compute.amazonaws.com:9090/graph	
+      http://ec2-13-233-114-63.ap-south-1.compute.amazonaws.com:9090/graph 
 
