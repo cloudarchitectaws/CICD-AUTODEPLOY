@@ -130,7 +130,7 @@ jobs:
             npm i
             npm audit fix --audit-level=critical --force
       - store_artifacts:
-          path: /tmp/screenshots  
+          path: /tmp/bkp 
             
                 
   scan-backend:
