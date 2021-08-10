@@ -293,7 +293,7 @@ jobs:
             pwd
             ls -la
             echo 'DISPLAY CONTENTS'
-            echo '*****************'
+            echo '*******************'
             cat migrations_dump.txt
       - run:
           name: Send migration results to memstash
