@@ -293,7 +293,7 @@ jobs:
             pwd
             ls -la
             echo 'DISPLAY CONTENTS'
-            echo '*******************'
+            echo '****fin***************'
             cat migrations_dump.txt
       - run:
           name: Send migration results to memstash
@@ -381,11 +381,11 @@ jobs:
       - run:
           name: Compress Backend
           command: |
-            tar -C backend -czvf artifact.tar.gz .
+            tar  -cvzf backend.tar.gz  backend
             ls -la
       - run:
           name: Deploy Backend
-          no_output_timeout: 30m
+          no_output_timeout: 50m
           command: |
             
             export ANSIBLE_HOST_KEY_CHECKING=False 
