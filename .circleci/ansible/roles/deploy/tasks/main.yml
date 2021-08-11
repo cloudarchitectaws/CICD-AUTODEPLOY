@@ -19,12 +19,7 @@
     src: /root/project/backend.tar.gz
     dest: /home/ubuntu/
 
-- name: Create a directory if it does not exist
-  ansible.builtin.file:
-    path: /home/ubuntu/
-    state: backend
-    
- 
+
 - name: "install  npm "
   become: true
   command: |
@@ -41,4 +36,4 @@
 - name: start pm2
   command: pm2 start npm --name backend -- start
   args: 
-    chdir: /home/ubuntu/backends
+    chdir: /home/ubuntu/backend
