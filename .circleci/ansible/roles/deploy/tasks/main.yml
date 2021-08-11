@@ -18,6 +18,12 @@
   unarchive:
     src: /root/project/backend.tar.gz
     dest: /home/ubuntu/
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /home/ubuntu/
+    state: backend
+    
  
 - name: "install  npm "
   become: true
